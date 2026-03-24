@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Frontend Framework</title>
+
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/stylesheet.css">
+
+</head>
+
+<body>
+  <section class="container-fluid">
+    <div class="row ">
+      <!-- Sidebar -->
+      <aside class="col-2 container-fluid p-0 d-none d-lg-block" id="dashboard" aria-label="Dashboard sidebar">
+        <article class="vh-100 flex-row">
+          <!-- Logo and Title -->
+          <header class="dashboard d-flex align-items-center justify-content-start px-3 py-4 w-100 flex-wrap">
+            <img src="/assets/images/logo.png" alt="Dashboard Logo" class="me-2 flex-shrink-0">
+            <h2 class="dashboard-title  mb-0 fs-6">Dashboard Kit</h2>
+          </header>
+
+          <!-- Navigation -->
+          <nav aria-label="Main navigation" class="">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="Overview" class="nav-link text-nav d-flex align-items-center active" aria-label="Overview"
+                  aria-current="page">
+                  <div class="d-flex align-items-center p-2">
+                    <img src="./assets/images/1. overview.png" alt="Overview icon" class="me-2" width="20" height="20">
+                    <span>Overview</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="Tickets" class="nav-link text-nav d-flex align-items-center" aria-label="Tickets">
+                  <div class="d-flex align-items-center p-2">
+                    <img src="./assets/images/2. tickets.png" alt="Tickets icon" class="me-2" width="20" height="20">
+                    <span>Tickets</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="Ideas" class="nav-link text-nav d-flex align-items-center" aria-label="Ideas">
+                  <div class="d-flex align-items-center p-2">
+                    <img src="./assets/images/3. ideas.png" alt="Ideas icon" class="me-2" width="20" height="20">
+                    <span>Ideas</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="Contacts" class="nav-link text-nav d-flex align-items-center" aria-label="Contacts">
+                  <div class="d-flex align-items-center p-2">
+                    <img src="./assets/images/4. contacts.png" alt="Contacts icon" class="me-2" width="20" height="20">
+                    <span>Contacts</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="Agents" class="nav-link text-nav d-flex align-items-center" aria-label="Agents">
+                  <div class="d-flex align-items-center p-2">
+                    <img src="./assets/images/5. agents.png" alt="Agents icon" class="me-2" width="20" height="20">
+                    <span>Agents</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="Articles" class="nav-link text-nav d-flex align-items-center" aria-label="Articles">
+                  <div class="d-flex align-items-center p-2">
+                    <img src="./assets/images/6. articles.png" alt="Articles icon" class="me-2" width="20" height="20">
+                    <span>Articles</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+            <!-- Divider -->
+            <hr class="border-light my-3 " role="separator">
+
+            <!-- Settings & Subscription -->
+            <section aria-label="User settings">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="settings" class="nav-link text-nav d-flex align-items-center" aria-label="settings">
+                    <div class="d-flex align-items-center p-2">
+                      <img src="./assets/images/a_1. settings.png" alt="Settings icon" class="me-2">
+                      <span>Settings</span>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="subscription" class="nav-link text-nav d-flex align-items-center" aria-label="Subscription">
+                    <div class="d-flex align-items-center p-2">
+                      <img src="./assets/images/a_2. subscription.png" alt="Subscription icon" class="me-2">
+                      <span>Subscription</span>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item mt-3 px-3">
+                  <button 
+                    class="btn btn-primary w-100" 
+                    data-bs-toggle="modal" 
+                    data-bs-target="#storyModal"
+                    aria-controls="storyModal">
+                    Click here
+                  </button>
+                </li>
+              
+            </section>
+          </nav>
+        </article>
+      </aside>
+      <!-- Overview -->
+      <main class="col-12 col-lg-10 Overview px-3" id="pageColor" role="main" aria-label="Overview main content">
+
+        <!-- Header -->
+        <section class="d-flex justify-content-between align-items-center py-3" aria-label="Overview header">
+          <h1 class="h4 m-0">Overview</h1>
+
+          <div class="d-flex align-items-center">
+            <img src="./assets/images/search.png" alt="Search icon" aria-hidden="true" class="me-3">
+            <img src="./assets/images/new.png" alt="Notifications icon" aria-hidden="true"
+              class="me-3">
+
+            <!-- Divider -->
+            <hr class="vr mx-3" role="separator">
+
+            <!-- User info -->
+            <p class="m-0 me-2 fs-6">Adaugo Oruche</p>
+            <img src="./assets/images/Corporate image 1.jpg" alt="User profile photo" class="rounded-circle" width="32"
+              height="32">
+          </div>
+        </section>
+
+        <!-- Stats cards -->
+        <section class="my-4" aria-label="Statistics cards">
+          <div class="row g-3">
+            <article class="col-6 col-md-3">
+              <div class="card stat-card text-center border-dark shadow-sm rounded-3 py-4 px-2">
+                <h6 class="text-dull mb-1">Unresolved</h6>
+                <h3 class="fw-bold mb-0">60</h3>
+              </div>
+            </article>
+
+            <article class="col-6 col-md-3">
+              <div class="card stat-card text-center border-dark shadow-sm rounded-3 py-4 px-2">
+                <h6 class="text-dull mb-1">Overdue</h6>
+                <h3 class="fw-bold mb-0">16</h3>
+              </div>
+            </article>
+
+            <article class="col-6 col-md-3">
+              <div class="card stat-card text-center border-dark shadow-sm rounded-3 py-4 px-2">
+                <h6 class="text-dull mb-1">Open</h6>
+                <h3 class="fw-bold mb-0">43</h3>
+              </div>
+            </article>
+
+            <article class="col-6 col-md-3">
+              <div class="card stat-card text-center border-dark shadow-sm rounded-3 py-4 px-2">
+                <h6 class="text-dull mb-1">On hold</h6>
+                <h3 class="fw-bold mb-0">64</h3>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Chart -->
+        <section class="card border shadow-sm rounded-4 mt-4 overflow-hidden" aria-label="Today's trends section">
+          <div class="row g-0 align-items-stretch">
+            <!-- Chart Area -->
+            <article class="col-md-8 p-4">
+              <header class="d-flex justify-content-between align-items-center mb-3">
+                <div>
+                  <h5 class="fw-semibold mb-0">Today's trends</h5>
+                  <small class="text-dull">as of 25 May 2019, 09:41 PM</small>
+                </div>
+                <div class="d-flex align-items-center">
+                  <span class="me-3 d-flex align-items-center">
+                    <span class="legend-lineblue me-3 "></span>
+                    <small class="text-dull">Today</small>
+                  </span>
+                  <span class="d-flex align-items-center">
+                    <span class="legend-line me-3"></span>
+                    <small class="text-secondary">Yesterday</small>
+                  </span>
+                </div>
+              </header>
+              <!-- Chart -->
+              <canvas id="trendsChart" height="200" role="img"
+                aria-label="Line chart showing today's and yesterday's trends"></canvas>
+            </article>
+
+            <!-- Stats Area -->
+            <aside class="col-md-4 border-start bg-white p-0 py-2">
+              <ul class="list-unstyled d-flex flex-column justify-content-between h-100 mb-0">
+                <li class="py-3 text-center border-bottom w-100">
+                  <p class="text-dull mb-1">Resolved</p>
+                  <h4 class="fw-bold mb-0">449</h4>
+                </li>
+                <li class="py-3 text-center border-bottom w-100">
+                  <p class="text-dull mb-1">Received</p>
+                  <h4 class="fw-bold mb-0">426</h4>
+                </li>
+                <li class="py-3 text-center border-bottom w-100">
+                  <p class="text-dull mb-1">Average first response time</p>
+                  <h5 class="fw-bold mb-0">33m</h5>
+                </li>
+                <li class="py-3 text-center border-bottom w-100">
+                  <p class="text-dull mb-1">Average response time</p>
+                  <h5 class="fw-bold mb-0">3h 8m</h5>
+                </li>
+                <li class="py-3 text-center w-100">
+                  <p class="text-dull mb-1">Resolution within SLA</p>
+                  <h4 class="fw-bold mb-0">94%</h4>
+                </li>
+              </ul>
+            </aside>
+
+          </div>
+        </section>
+
+        <!-- Unresolved Tickets & Tasks Sections -->
+        <section class="my-4 mb-4 row g-3">
+          <!-- Unresolved Tickets Section -->
+          <article class="col-md-6" aria-label="Unresolved tickets section">
+            <div class="card border shadow-sm rounded-4 p-0 overflow-hidden h-100" aria-label="Unresolved tickets card">
+              <header class=" p-4">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h2 class="h5 mb-0">Unresolved Tickets</h2>
+                  <small href="#" class="text-primary small py-2">View details</small>
+                </div>
+                <small class="text-dull">Group: <span class="fw-bold text-muted">Support</span></small>
+              </header>
+
+              <ul class="list-unstyled mb-0 p-0">
+                <li class="d-flex justify-content-between border-bottom py-3 px-4">
+                  <span class="text-dark">Waiting on Feature Request</span>
+                  <span class="text-dull">4238</span>
+                </li>
+                <li class="d-flex justify-content-between border-bottom py-3 px-4">
+                  <span class="text-dark">Awaiting Customer Response</span>
+                  <span class="text-dull">1005</span>
+                </li>
+                <li class="d-flex justify-content-between border-bottom py-3 px-4">
+                  <span class="text-dark">Awaiting Developer Fix</span>
+                  <span class="text-dull">914</span>
+                </li>
+                <li class="d-flex justify-content-between py-3 px-4">
+                  <span class="text-dark">Pending</span>
+                  <span class="text-dull">281</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Tasks Section -->
+          <section class="col-md-6" aria-label="Tasks section">
+            <article class="card border shadow-sm rounded-4 p-0 overflow-hidden h-100" aria-label="Tasks card">
+              <header class=" px-4 py-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h2 class="h5 mb-0">Tasks</h2>
+                  <small href="#" class="text-primary small py-2">View all</small>
+                </div>
+                <small class="text-dull">Today</small>
+              </header>
+
+              <ul class="list-unstyled mb-0 p-0">
+                <li class="d-flex align-items-center justify-content-between py-3 px-4 border-bottom">
+                  <label class="form-check-label text-dull" for="task1">Create new task</label>
+                  <span class=" bg-light text-dull rounded align-items-center text-center add-icon">+</span>
+                </li>
+                <li class="d-flex align-items-center justify-content-between py-3 px-4 border-bottom">
+                  <div class="form-check">
+                    <input class="form-check-input rounded-circle" type="checkbox" value="" id="task1">
+                    <label class="form-check-label ms-2" for="task1">Finish ticket update</label>
+                  </div>
+                  <span class="badge bg-warning text-white">URGENT</span>
+                </li>
+                <li class="d-flex align-items-center justify-content-between py-3 px-4 border-bottom">
+                  <div class="form-check">
+                    <input class="form-check-input rounded-circle" type="checkbox" value="" id="task2">
+                    <label class="form-check-label ms-2" for="task2">Create new ticket example</label>
+                  </div>
+                  <span class="badge bg-success">NEW</span>
+                </li>
+                <li class="d-flex align-items-center justify-content-between py-3 px-4">
+                  <div class="form-check">
+                    <input class="form-check-input rounded-circle" type="checkbox" value="" id="task3" checked>
+                    <label class="form-check-label ms-2" for="task3">Update ticket report</label>
+                  </div>
+                  <span class="badge bg-light text-dull">DEFAULT</span>
+                </li>
+              </ul>
+            </article>
+          </section>
+
+        </section>
+
+
+      </main>
+    </div>
+  </section>
+
+  <!-- Story Modal -->
+  <section 
+    class="modal fade" 
+    id="storyModal" 
+    tabindex="-1" 
+    aria-labelledby="storyModalLabel" 
+    aria-hidden="true"
+    role="dialog">
+
+    <article class="modal-dialog modal-dialog-centered">
+      <section class="modal-content p-3">
+        
+        <!-- Story Header -->
+        <header class="modal-header">
+          <h2 class="modal-title fs-5" id="storyModalLabel">A Short Story</h2>
+          <button 
+            type="button" 
+            class="btn-close" 
+            data-bs-dismiss="modal" 
+            aria-label="Close story">
+          </button>
+        </header>
+
+        <!-- Story Content -->
+        <main class="modal-body">
+          <section id="storyText" aria-live="polite"></section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+        </footer>
+
+      </section>
+    </article>
+  </section>
+
+  <!-- Audio -->
+  <audio id="storyAudio" preload="auto">
+    <source src="./assets/audio/universfield-new-notification-057-494255.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
+
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="assets/js/chart.js"></script>
+</body>
+
+</html>
